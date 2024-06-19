@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/*
+    Cores:
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+main {
+    background-color: #5f2c82; 
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    background-color: white;
+    height: 515px;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
+    
+}
+
+#imagem {
+    position: absolute;
+    background-image: url(../imagens/metal.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    top: 22%;
+    transform: translate(-50%, -50%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 200px;
+    width: 250px
+}
+
+div > h1 {
+    font-size: 1.5em;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 44%;
+    transform: translate(-50%, -50%);
+}
+
+div > p {
+    font-size: 0.8em;
+    width: 235px;
+    padding-right: 2px;
+    position: absolute;
+    text-align: justify;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+}
+
+#formulario {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#email, #senha {
+    background-color: #5f2c82;
+    height: 40px;
+    border-radius: 8px;
+    padding-top: 3px;
+    padding-left: 35px;
+}
+
+#email {
+    margin-bottom: 5px;
+}
+
+#senha {
+    margin-bottom: 5px;
+}
+
+#iemail, #isenha {
+    font-size: 1em;
+    text-indent: 5px;
+    background-color: #94CFCD;
+    margin-left: 3px;
+    border: none;
+    border-radius: 8px;
+    height: 35px;
+    width: 160px;
+}
+
+.entrar {
+    background-color: #53AAA7;
+    border-radius: 8px;
+    width: 235px;
+}
+
+.esquecisen {
+    background-color: white;
+    border-radius: 8px;
+    border: 1.3px solid #53AAA7;
+    margin-top: -15px;
+    width: 235px;
+}
+
+#entrar {
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    background-color: #53AAA7;
+    border-radius: 8px;
+    border: none;
+    height: 40px;
+    width: 235px;
+}
+
+#entrar:hover {
+    background-color: #2D6462;
+    cursor: pointer;
+}
+
+#esquecisen:hover {
+    background-color: #6CD3CF;
+    cursor: pointer;
+}
+
+#esquecisen {
+    font-size: 1em;
+    text-align: center;
+    border: none;
+    color:#2D6462;
+    border-radius: 8px;
+    height: 40px;
+    width: 235px;
+}
