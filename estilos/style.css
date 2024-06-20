@@ -14,9 +14,6 @@
     box-sizing: border-box;
 }
 
-body {
-
-}
 
 main {
     background-color: #5f2c82; 
@@ -34,7 +31,6 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
-    overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
     
 }
@@ -82,73 +78,79 @@ div > p {
 }
 
 #email, #senha {
+    border: 1px solid #602c828b;
     background-color: #5f2c82;
+    width: 230px;
     height: 40px;
+    padding: 3px 0px 0px 24px;
+    margin: 0px -10px 5px -10px;
     border-radius: 8px;
-    padding-top: 3px;
-    padding-left: 35px;
 }
 
-#email {
-    margin-bottom: 5px;
-}
-
-#senha {
-    margin-bottom: 5px;
-}
-
-#iemail, #isenha {
+#email > #iemail, #senha > #isenha {
     font-size: 1em;
-    text-indent: 5px;
-    background-color: #94CFCD;
-    margin-left: 3px;
-    border: none;
-    border-radius: 8px;
+    width: 180px;
     height: 35px;
-    width: 160px;
-}
-
-.entrar {
-    background-color: #53AAA7;
+    background-color: #94CFCD;
+    text-indent: 5px;
+    margin-left: 22.8px;
+    margin-top: -1px;
     border-radius: 8px;
-    width: 235px;
+    border: none;
 }
 
-.esquecisen {
-    background-color: white;
-    border-radius: 8px;
-    border: 1.3px solid #53AAA7;
-    margin-top: -15px;
-    width: 235px;
-}
-
-#entrar {
-    font-size: 1em;
-    text-align: center;
+#email > #user, #senha > #key {
+    position: absolute;
+    display: block;
     color: white;
-    background-color: #53AAA7;
-    border-radius: 8px;
-    border: none;
+    margin-left: -22px;
+    margin-top: -3px;
+    font-size: 2.5em;
+}
+
+#campo_entrar, #campo_esquecisen {
+    width: 230px;
     height: 40px;
-    width: 235px;
+    padding: 3px 0px 0px 21px;
+    margin: 0px -10px 5px -10px;
+    border-radius: 7px;
 }
 
-#entrar:hover {
-    background-color: #2D6462;
-    cursor: pointer;
-}
-
-#esquecisen:hover {
-    background-color: #6CD3CF;
-    cursor: pointer;
-}
-
-#esquecisen {
+#campo_entrar > #entrar {
+    background-color: #53AAA7;
+    color: white;
+    border: none;
     font-size: 1em;
     text-align: center;
-    border: none;
-    color:#2D6462;
-    border-radius: 8px;
+    width: 231px;
     height: 40px;
-    width: 235px;
+    margin: -3px 0px 2px -22px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 5px; 
+}
+
+#campo_esquecisen > #esquecisen {
+    background-color: white;
+    color: #2d6462;
+    border: 1px solid #5BBAB6;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    width: 231px;
+    height: 40px;
+    margin: -3px 0px 2px -22px;
+    padding: 0px 0px 8px 10px;
+    border-radius: 5px; 
+}
+
+#campo_entrar {
+    background-color: #53AAA7 ;
+}
+
+#campo_entrar > #entrar:hover {
+    background-color: #2D6462;
+}
+
+#campo_esquecisen > #esquecisen:hover {
+    background-color: #6CD3CF;
 }
