@@ -16,31 +16,54 @@ Cores:
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     main {
-        position: relative;
         background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
     }
 
     #login {
-        margin: auto;
         width: 80vw;
+        max-width: 81vw;
         height: 280px;
     }
 
     #imagem {
+        position: absolute;
         height: 280px;
-        width: 80vw;
+        width: 80%;
         top: 50%;
-        background-size: contain;
+        background-size: 24vw;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
+
+    div > h1 {
+        top: 30.8%;
+        margin-left: 12vw;
+    }
+
+    div > p {
+        top:38%;
+        width: 55vw;
+        padding-right: 2vw;
+        margin-left: 13vw;
+    }
     #formulario {
-        top: 58%;
+        width: 27vw;
+        position: absolute;
+        top: 57%
     }
 
     #email, #senha {
+        position: relative;
+        width: 53.5vw;
     }
 
     #email > #iemail, #senha > #isenha {
-    } 
+        position: absolute;
+        width: calc(100% - 48px);
+        margin-left: none;
+    }
+    
+    #campo_entrar > #entrar, #campo_esquecisen > #esquecisen {
+        width: 53.5vw;
+    }
 }    
