@@ -14,142 +14,129 @@
     box-sizing: border-box;
 }
 
+body,html {
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;;
+}
 
 main {
-    background-color: #5f2c82; 
+    position: relative;
     height: 100vh;
     width: 100vw;
 }
 
 #login {
-    position: relative;
     background-color: white;
+    position: absolute;
     height: 515px;
     width: 250px;
+    overflow: hidden;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.655);
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
-    
-}
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}   
 
-#imagem {
-    position: absolute;
+
+#login > #imagem {
+    display: block;
     background-image: url(../imagens/metal.jpg);
+    height: 200px;
+    width: 250px;
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    left: 50%;
-    top: 22%;
-    transform: translate(-50%, -50%);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    height: 200px;
-    width: 250px
 }
 
-div > h1 {
-    font-size: 1.5em;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    top: 44%;
-    transform: translate(-50%, -50%);
-}
-
-div > p {
-    font-size: 0.8em;
-    width: 235px;
-    padding-right: 2px;
-    position: absolute;
-    text-align: justify;
-    left: 50%;
-    top: 54%;
-    transform: translate(-50%, -50%);
-}
-
-#formulario {
-    position: absolute;
-    left: 50%;
-    top: 74%;
-    transform: translate(-50%, -50%);
-}
-
-#email, #senha {
-    border: 1px solid #602c828b;
-    background-color: #5f2c82;
-    width: 230px;
-    height: 40px;
-    padding: 3px 0px 0px 24px;
-    margin: 0px -10px 5px -10px;
-    border-radius: 8px;
-}
-
-#email > #iemail, #senha > #isenha {
-    font-size: 1em;
-    width: 180px;
-    height: 35px;
-    background-color: #94CFCD;
-    text-indent: 5px;
-    margin-left: 22.8px;
-    margin-top: -1px;
-    border-radius: 8px;
-    border: none;
-}
-
-#email > #user, #senha > #key {
-    position: absolute;
+#login > #formulario {
+    padding: 10px;
     display: block;
-    color: white;
-    margin-left: -22px;
-    margin-top: -3px;
+}
+
+#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario > p {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+} 
+
+#fundo > label {
+    display: none;
+}
+
+#fundo {
+    background-color: #5f2c82;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid #5f2c82;
+}
+
+#fundo > #user, #key {
+    width: 40px;
     font-size: 2.5em;
-}
-
-#campo_entrar, #campo_esquecisen {
-    width: 230px;
-    height: 40px;
-    padding: 3px 0px 0px 21px;
-    margin: 0px -10px 5px -10px;
-    border-radius: 7px;
-}
-
-#campo_entrar > #entrar {
-    background-color: #53AAA7;
+    padding: 2px;
     color: white;
+}
+
+#fundo > #iemail, #isenha {
+    background-color: #94CFCD ;
+    height: 100%;
+    font-size: 1em;
+    padding: 4px;
+    width: calc(100% - 45px);
+    border-radius: 8px;
     border: none;
-    font-size: 1em;
-    text-align: center;
-    width: 231px;
-    height: 40px;
-    margin: -3px 0px 2px -22px;
-    padding: 0px 0px 0px 0px;
-    border-radius: 5px; 
+    transform: translateY(-17px);
 }
 
-#campo_esquecisen > #esquecisen {
+#fundo > #iemail:focus-within {
     background-color: white;
-    color: #2d6462;
-    border: 1px solid #5BBAB6;
-    font-weight: 400;
-    font-size: 1em;
-    text-align: center;
-    width: 231px;
+}
+
+#fundo > #isenha:focus-within {
+    background-color: white;
+}
+
+#entrar {
+    display: block;
+    background-color:  #53AAA7;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
     height: 40px;
-    margin: -3px 0px 2px -22px;
-    padding: 0px 0px 8px 10px;
-    border-radius: 5px; 
+    font-size: 1em;
+    margin-bottom: 5px;
 }
 
-#campo_entrar {
-    background-color: #53AAA7 ;
+#entrar:hover {
+    background-color:#2D6462 ;
 }
 
-#campo_entrar > #entrar:hover {
-    background-color: #2D6462;
+#botao {
+    display: block;
+    width: 100%;
+    color: #2D6462;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 7px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #5AB9B6;
 }
 
-#campo_esquecisen > #esquecisen:hover {
+#botao:hover {
     background-color: #6CD3CF;
 }
+

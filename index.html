@@ -10,30 +10,35 @@
 </head>
 <body>
     <main>
-        <section id="login"></section>
+        <section id="login">
         <div id="imagem"> 
             
         </div>
-        <div>
+        <div id="formulario">
             <h1>Login</h1>
             <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-            <form id="formulario" action="login.php" method="post" autocomplete="on">
+            <form action="login.php" method="post" autocomplete="on">
 
-                <div id="email">
+                <div id="fundo">
                     <span id="user" class="material-symbols-outlined">person</span>
                     <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" maxlength="30" required>
+                    <label for="iemail">Email</label>
                 </div>
-                <div id="senha">
+                <div id="fundo">
                     <span id="key" class="material-symbols-outlined">vpn_key</span>
-                    <input type="password" name="senha" id="isenha" placeholder="sua senha" minlength="8" maxlength="15" autocomplete="current-password" required> 
+                    <input type="password" name="senha" id="isenha" placeholder="sua senha" minlength="8" maxlength="15" autocomplete="current-password" required>
+                    <label for="isenha">Senha</label>
                 </div>
-                    <div id="campo_entrar"><input type="submit" value="Entrar" id="entrar"></div>
-                    <div id="campo_esquecisen"><input type="submit" value="Esqueci a senha ✉ " id="esquecisen"></div>
+                <input type="submit" value="Entrar" id="entrar">
+                    <a href="#" id="botao">
+                        Esqueci a senha ✉
+                    </a>
             
             
             </form>
 
         </div>
+        </section>
     </main>
 </body>
 </html>
