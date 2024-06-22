@@ -25,7 +25,7 @@ main {
     position: relative;
     background-color: white;
     height: 93vh;
-    width: 250px;
+    width: 270px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -39,14 +39,14 @@ main {
     background-image: url(../imagens/metal.jpg);
     background-position: left bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 56vw;
     left: 50%;
     top: 22%;
     transform: translate(-50%, -50%);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 217px;
-    width: 250px
+    width: 270px
 }
 
 div > h1 {
