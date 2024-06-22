@@ -66,4 +66,62 @@ Cores:
     #campo_entrar > #entrar, #campo_esquecisen > #esquecisen {
         width: 53.5vw;
     }
-}    
+}  
+
+@media screen and (min-width: 992px) {
+    main {
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+    }
+
+    div > h1 {
+        font-size: 2em;
+        top: 25.3%;
+        margin-left: -236px
+    }
+
+    div > p {
+        font-size: 1em;
+        top:36%;
+        width: 485px;
+        padding-right: 25px;
+        margin-left: -220px;
+    }
+
+    #login {
+        min-width: 950px;
+        height: 350px;
+    }
+
+    #imagem {
+        height: 350px;
+        top: 50%;
+        margin-left: 241px;
+        width: 470px;
+        background-size: 472px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #formulario {
+        top: 58.5%;
+        min-width: 910px;
+    }
+
+    #email, #senha {
+        width: 462px
+    }
+
+    #email > #iemail, #senha > #isenha {
+        width: 412px;
+    }
+
+    #campo_entrar > #entrar, #campo_esquecisen > #esquecisen {
+        width: 462px;
+    }
+
+
+
+    
+}
